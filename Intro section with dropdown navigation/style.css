@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+body{
+    padding:30px 100px;
+    background: hsl(0, 0%, 98%);
+}
+main{
+    display:flex;
+    font-family: 'Epilogue', sans-serif;
+    color:hsl(0, 0%, 41%);
+    position: relative;
+    cursor: pointer;
+}
+.container1{
+    display:flex;
+    flex-direction: column;
+    max-width:50%;
+}
+.container2{
+    display:flex;
+    flex-direction: column;
+    margin-left:110px;
+}
+.logo{
+    margin-right:50px;
+}
+.mainTextnBtn{
+    margin-left:120px;
+    margin-top:120px;
+}
+.dropdown, .sponsors, .list{
+    display:flex;
+    align-items: center;
+}
+.featuresVisible, .companyVisible{
+    display: flex;
+    align-items: center;
+    margin-right:10px;
+}
+.arrowUp1, .arrowUp2{
+    height:5px;
+    margin-left:5px;
+}
+img{
+    margin-right:20px;
+}
+h1{
+    font-size:60px;
+    line-height: 1;
+    color:hsl(0, 0%, 8%);
+}
+p{
+    font-size:15px;
+}
+.mainParagraph{
+    margin-top:40px;
+    margin-bottom:40px;
+    width:340px;
+    line-height:1.5;
+}
+.learnMorebtn{
+    border:none;
+    background:hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 98%);
+    padding:13px 20px;
+    border-radius:10px;
+    font-weight: 700;
+    margin-bottom:90px;
+}
+.register{
+    border:2px solid hsl(0, 0%, 57%);
+    padding:11px 20px;
+    border-radius:10px;
+    font-weight: 700;
+    color:hsl(0, 0%, 43%);
+    background:none;
+}
+.login{
+    border:none;
+    background: none;
+    color:hsl(0, 0%, 41%);
+    margin-right:30px;
+}
+.signInUp{
+    display: flex;
+    justify-content: flex-end;
+    margin-left:280px;
+}
+.login:hover{
+ color:hsl(0, 0%, 8%);
+ font-weight: bold;
+}
+.register:hover{
+    color:hsl(0, 0%, 8%);
+    border-color:hsl(0, 0%, 8%);
+}
+.careers{
+    margin-right:30px;
+}
+.careers:hover, .about:hover{
+    color:hsl(0, 0%, 8%);
+    font-weight: bold;
+}
+.learnMorebtn:hover{
+    border:2px solid hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 8%);
+    background:hsl(0, 0%, 98%);
+}
+.deskHeroImg{
+    width:380px;
+    margin-top:20px;
+}
+.mobHeroImg, .closeBtn, .menuBtn{
+    display: none;
+}
+.closeBtn, .menuBtn{
+    background: none;
+    border: none;
+}
+#featuresPopUp{
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    padding:12px 15px 7px 15px;
+    border-radius: 5px;
+    box-shadow: hsl(0, 0%, 57%) 1px 1px 8px;
+    top:6%;
+    left:7%;
+    cursor: pointer;
+}
+.hidden{
+    display:none;
+}
+#companyPopUp{
+    background:white;
+    border-radius: 5px;
+    box-shadow: hsl(0, 0%, 57%) 1px 1px 8px;
+    flex-direction: column;
+    position: absolute;
+    padding:10px;
+    top:6%;
+    left:21%;
+    cursor: pointer;
+}
+.companyP:hover{
+    text-decoration-line: underline;
+}
+.companyP{
+    margin:5px;
+}
+.toDo, .calendar, .planning, .reminders{
+    display: flex;
+    margin-bottom:10px;
+}
+.toDo:hover, .calendar:hover, .planning:hover, .reminders:hover{
+    text-decoration-line: underline;
+}
+.icon{
+    width:15px;
+}
+button{
+    cursor: pointer;
+}
+@media(max-width: 500px){
+   body{
+    padding:0;
+    display: flex;
+    justify-content: center;
+   }
+    main{
+        display:flex;
+        flex-direction: column;
+        padding-top:20px;
+        align-items: center;
+        min-height: 100vh;
+        width:375px;
+        background:  hsl(0, 0%, 98%);
+        position: relative;
+    }
+    .container1, .container2{
+        width:375px;
+        margin:0;
+        padding: 0px;
+    }
+    .mainTextnBtn{
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:325px;
+    }
+    .list{
+        display:none;
+        flex-direction: column;
+        min-height: 100vh;
+        width:240px;
+        background: white;
+        z-index: 1;
+        position: absolute;
+        top:0%;
+        right:0%;
+        font-size:16px;
+        padding-top:60px;
+        font-weight:700;
+        color:hsl(0, 0%, 55%);
+        align-items: flex-start;
+        padding-left:30px;
+        box-shadow:-200px 0px 200px 0px rgba(0, 0, 0, 0.5);
+    }
+    .logo{
+        width:80px;
+        margin-bottom:190px;
+        position: absolute;
+        top:0%;
+        left:1%;
+    }
+    h1{
+        font-size:35px;
+        width:350px;
+        margin-left: 27px;
+        margin-top:30px;
+    }
+    .mainParagraph{
+        margin-top:25px;
+        margin-bottom:25px;
+        text-align: center;
+        width:300px
+    }
+    .learnMorebtn{
+        margin-bottom:30px;
+    }
+    .deskHeroImg{
+        display: none;
+    }
+    .signInUp{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position:absolute;
+        top:40%;
+        left:-31.5%;
+        z-index:3;
+    }
+    .login{
+        font-weight:700;
+        color:hsl(0, 0%, 55%);
+        margin-left:20px;
+        margin-bottom:10px;
+    }
+    .register{
+        width:180px
+    }
+    img{
+        width:60px;
+        margin:10px;
+    }
+    .mobHeroImg{
+        display: flex;
+        width:375px;
+        position: absolute;
+        top:7%;
+        left:-2.8%;
+    }
+    .menuBtn, .closeBtn{
+        display:flex;
+        position: absolute;
+        background: none;
+        border:none;
+        width:50px;
+        right:2%;
+        top:0.3%;
+    }
+    .closeBtn{
+        z-index: 3;
+        width:25px;
+        right:9%;
+        display:none;
+    }
+    #featuresPopUp, #companyPopUp{
+        z-index: 4;
+        box-shadow: none;
+        position: unset;
+    }
+    #featuresPopUp{
+      justify-content: center;
+    }
+    #companyPopUp{
+       padding-left:20px;
+       padding-top:0;
+    }
+    .arrowUp1, .arrowUp2{
+        width:10px;
+    }
+    .featuresVisible, .companyVisible{
+        margin-bottom:10px;
+    }
+    .careers{
+        margin-bottom:15px;
+    }
+    .toDo, .calendar, .planning, .reminders{
+        margin-bottom:0
+    }
+}
